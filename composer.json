@@ -1,0 +1,29 @@
+{
+    "name": "componenta/http-paginate-interceptor",
+    "description": "HTTP pagination result interceptor for Componenta",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "componenta/http-pagination": "^1.0",
+        "componenta/interceptor": "^1.0",
+        "componenta/paginator": "^1.0",
+        "componenta/scope": "^1.0",
+        "psr/http-message": "^2.0"
+    },
+    "require-dev": {
+        "nyholm/psr7": "^1.8",
+        "pestphp/pest": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Componenta\\Interceptor\\Http\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Componenta\\Interceptor\\Http\\PaginateTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
