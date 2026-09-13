@@ -39,10 +39,11 @@ final class Paginate implements InterceptorInterface, ScopedInterface
         self::FIELD_RESULTS,
     ];
 
+    /** @var array<array-key, string> */
     private array $fields;
 
     /**
-     * @param string<self::FIELD_*> ...$fields Fields to include in the resource paginator output.
+     * @param string ...$fields Fields to include in the resource paginator output.
      */
     public function __construct(string ...$fields)
     {
